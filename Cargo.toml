@@ -1,0 +1,63 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/devil-core",
+    "crates/devil-package",
+    "crates/devil-registry",
+    "crates/devil-resolver",
+    "crates/devil-build",
+    "crates/devil-vm",
+    "crates/devil-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+repository = "https://github.com/devil-lang/devil"
+authors = ["The Devil Contributors"]
+
+[workspace.dependencies]
+devil-core = { path = "crates/devil-core", version = "0.1.0" }
+devil-package = { path = "crates/devil-package", version = "0.1.0" }
+devil-registry = { path = "crates/devil-registry", version = "0.1.0" }
+devil-resolver = { path = "crates/devil-resolver", version = "0.1.0" }
+devil-build = { path = "crates/devil-build", version = "0.1.0" }
+devil-vm = { path = "crates/devil-vm", version = "0.1.0" }
+
+anyhow = "1"
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml_edit = { version = "0.25", features = ["serde", "display"] }
+semver = { version = "1", features = ["serde"] }
+sha2 = "0.10"
+hex = "0.4"
+walkdir = "2"
+flate2 = "1"
+tar = "0.4"
+ureq = { version = "3", features = ["multipart", "json", "charset"] }
+url = "2"
+indexmap = "2"
+clap = { version = "4", features = ["derive"] }
+owo-colors = "4"
+console = "0.16"
+tempfile = "3"
+rquickjs = { version = "0.14", features = ["bindgen"] }
+swc_core = { version = "82", features = [
+    "ecma_parser",
+    "ecma_parser_typescript",
+    "ecma_ast",
+    "ecma_codegen",
+    "ecma_transforms",
+    "ecma_transforms_module",
+    "ecma_transforms_typescript",
+    "ecma_transforms_optimization",
+    "ecma_helpers_inline",
+    "ecma_minifier",
+    "ecma_visit",
+    "ecma_utils",
+    "common",
+    "swc_config",
+] }

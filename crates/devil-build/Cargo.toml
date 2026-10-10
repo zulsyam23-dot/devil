@@ -1,0 +1,19 @@
+[package]
+name = "devil-build"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+description = "Zero-node TypeScript bundler (swc based) producing single-file JavaScript"
+
+[dependencies]
+devil-core.workspace = true
+devil-resolver.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+swc_core.workspace = true
+walkdir.workspace = true

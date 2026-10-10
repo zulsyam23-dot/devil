@@ -1,0 +1,12 @@
+# ignore
+/dist
+/.devil
+target/
+node_modules/
+
+# dependencies
+devil.lock
+
+# editors
+.DS_Store
+*.swp

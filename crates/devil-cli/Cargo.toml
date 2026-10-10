@@ -1,0 +1,32 @@
+[package]
+name = "devil-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+description = "The devil command line interface"
+default-run = "devil"
+
+[[bin]]
+name = "devil"
+path = "src/main.rs"
+
+[dependencies]
+devil-core.workspace = true
+devil-package.workspace = true
+devil-registry.workspace = true
+devil-resolver.workspace = true
+devil-build.workspace = true
+devil-vm.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+toml_edit.workspace = true
+clap.workspace = true
+owo-colors.workspace = true
+console.workspace = true
+semver.workspace = true
+swc_core.workspace = true
+walkdir.workspace = true

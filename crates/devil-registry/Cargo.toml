@@ -1,0 +1,22 @@
+[package]
+name = "devil-registry"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+description = "Client for the devil registry protocol (index, download, publish)"
+
+[dependencies]
+devil-core.workspace = true
+devil-package.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+semver.workspace = true
+sha2.workspace = true
+hex.workspace = true
+ureq.workspace = true
+url.workspace = true
